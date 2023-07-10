@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng điều khiển</title>
+    <!-- link css chung -->
+    <link rel="stylesheet" href="./style/common.css">
+    <!-- link css riêng -->
+    <link rel="stylesheet" href="./style/dashboard_style.css">
+    <!-- link icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link bootstrap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <div class="avatar">
+                    <img src="./image/avata.jpeg" class="img-fluid rounded-circle" alt="avatar-admin" srcset="./image 2x">
+                    <p><a class="text-white " href="homePage.html">Rikkei Academy</a></p>
+                </div>
+                <hr>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item rounded-4">
+                        <a class="nav-link  text-white active bg-secondary bg-gradient" aria-current="page" href="dashboard.html">
+                        <i class="fa-solid fa-table-columns fa-sm" style="color: #ffffff;"></i>Bảng điều khiển</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="courseManager.html">
+                        <i class="fa-solid fa-people-roof fa-sm" style="color: #ffffff;"></i>Quản lý khoá học</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="classManager.html">
+                        <i class="fa-solid fa-users-rectangle fa-sm" style="color: #ffffff;"></i>Quản lý lớp học</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="studentManager.html">
+                        <i class="fa-solid fa-layer-group fa-sm" style="color: #ffffff;"></i>Quản lý sinh viên</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="acountManager.html">
+                        <i class="fa-solid fa-user-lock fa-sm" style="color: #ffffff;"></i>Quản lý tài khoản</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-10 ">
+                <header>
+                    <p class="text-lg-start">Học là quá trình không ngừng nghỉ. Được học và làm mà phát triển đó mới là lẽ sống
+                    <button class="btn btn-bell" ><i class="fa-solid fa-bell" style="color: #bb2327;"></i></button>
+                    <button class="btn btn-primary"><a href="javascript:logOut()">Đăng xuất</a></button></p>
+                </header>
+                <article>
+                    <!-- <section>
+                        <h2 class="display-3">Chào mừng đến trang quản trị Rikkei Academy</h2>
+                        <p class="display-5">Đà Nẵng - Hà Nội - TP.HCM - FUKUOKA</p>
+                    </section> -->
+                    <section>
+                        <h3 class="first-h3" id="course"><i class="fa-solid fa-layer-group fa-sm" style="color: #bb2327;"></i>Thông tin khoá học</i></p>
+                        <p class="content" id="courseNumber">Số khoá học: </p>
+                    </section>
+                    <section>
+                        <h3 id="class"><i class="fa-solid fa-people-roof fa-sm" style="color: #bb2327;"></i>Thông tin lớp học</i></p>
+                        <p class="content" id="classNumber">Số lớp học : </p>
+                        <p class="content" id="classActive">Số lớp đang hoạt động : </p>
+                        <p class="content" id="classEnd">Số lớp đã kết thúc : </p>
+                        <p class="content" id="classWaiting">Số lớp đang chờ : </p>
+                    </section>
+                    <section>
+                        <h3><i class="fa-solid fa-users-rectangle fa-sm" style="color: #bb2327;"></i></i>Thông tin sinh viên</i></p>
+                        <p class="content" id="studentNumber">Tổng số sinh viên : </p>
+                        <p class="content" id="studentWaiting">Số sinh viên chờ lớp : </p>
+                        <p class="content" id="studentActive">Số sinh viên đang học : </p>
+                        <p class="content" id="studentSave">Số sinh viên bảo lưu / đình chỉ : </p>
+                        <p class="content" id="studentGraduate">Số sinh viên tốt nghiệp : </p>
+                    </section>
+                </article>
+            </div>
+        </div>
+        <footer><p>&#169 2022 By Rikkei Academy - Rikkei Education - All rights reserved.</p></footer>
+    </div>
+    <!-- link js -->
+    <script src="./main/dashboard_main.js"></script>
+    <script src="./main/storeData_main.js"></script>
+    <script src="./main/login_main.js"></script>
+   
+    <!-- link js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+/* CSS toàn trang */
+.container-fluid {
+    position: relative;
+    height: 75rem;
+    border: 1px solid #ddd;
+}
+/* CSS avatar admin */
+.img-fluid {
+    width: 12rem;
+    height: 12rem;
+    border: 0.3rem solid #aaa;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+.avatar {
+    text-align: center;
+}
+/* CSS nav */
+.col-2 {
+    position: absolute;
+    background-color: #bb2327;
+    height: 95vh;
+}
+.text-white {
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+}
+.col-2 hr {
+    border: 0.1rem solid lightgray;
+    margin-bottom: 3rem;
+}
+.nav-pills .rounded-4 .nav-link  {
+    border-radius: 1rem;
+}
+.nav .nav-link {
+    padding: 0.5rem;
+}
+.bg-secondary.bg-gradient {
+    height: 5.5rem;
+}
+.nav-item i {
+    padding: 1rem;
+}
+/* CSS header */
+.col-10 {
+    position: absolute;
+    transform: translate(0%, 0%);
+}
+.col-10 header {
+    display: inline-block;
+    background-color: #ddd;
+    width: 100%;
+    height: 9%;
+    
+}
+.col-10 header .text-lg-start {
+   font-size: 2.5rem;
+   margin-left: 3%;
+   padding-top: 1%;
+}
+.btn-bell i {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+.btn-primary a {
+    width: 7rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    color: white;
+}
+/* CSS nội dung chính của trang */
+.display-1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15%;
+}
+.display-5 {
+    font-size: 2rem;
+    font-weight: none;
+    text-align: center;
+    margin-top: 1%;
+}
+section h3 {
+    font-size: 3rem;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    font-size: 1rem;
+}
+footer p {
+    text-align: center;
+    margin-top: 1rem;
+}
+/* CSS article : add, search, arrange,.. */
+article h1 {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+#btnAdd, #btnSearch {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+#btnAdd {
+    margin-left: 3%;
+    margin-right: 10rem;
+}
+#search {
+    width: 40rem;
+    height: 3.2rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+#bar label {
+    font-size: 2rem;
+    margin-left: 5%;
+    margin-right: 1%;
+}
+#bar select {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+table {
+    margin-top: 3%;
+}
+thead {
+    background-color: #bb2327;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* CSS phân trang */
+.pagination {
+    position: absolute;
+    left: 20%;
+    bottom: 8%;
+    width: 100%;
+    font-size: 1.5rem;
+    gap: 1rem;
+}
+.pagination .page-item .page-link {
+    background-color: black;
+    color: white;
+
+}
+
+
+
